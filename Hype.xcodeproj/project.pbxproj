@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34CE89442354D4F2003C66BD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34CE89432354D4F2003C66BD /* CloudKit.framework */; };
+		34CE89462354D708003C66BD /* hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE89452354D708003C66BD /* hype.swift */; };
 		625E1200233C10690076B139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E11FF233C10690076B139 /* AppDelegate.swift */; };
 		625E1202233C10690076B139 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E1201233C10690076B139 /* SceneDelegate.swift */; };
-		625E1204233C10690076B139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E1203233C10690076B139 /* ViewController.swift */; };
 		625E1207233C10690076B139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625E1205233C10690076B139 /* Main.storyboard */; };
 		625E1209233C106A0076B139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625E1208233C106A0076B139 /* Assets.xcassets */; };
 		625E120C233C106A0076B139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625E120A233C106A0076B139 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34CE89412354D424003C66BD /* Hype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hype.entitlements; sourceTree = "<group>"; };
+		34CE89432354D4F2003C66BD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		34CE89452354D708003C66BD /* hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hype.swift; sourceTree = "<group>"; };
 		625E11FC233C10690076B139 /* Hype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		625E11FF233C10690076B139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		625E1201233C10690076B139 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		625E1203233C10690076B139 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		625E1206233C10690076B139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		625E1208233C106A0076B139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		625E120B233C106A0076B139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +34,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34CE89442354D4F2003C66BD /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34CE89402354D3D4003C66BD /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				625E11FF233C10690076B139 /* AppDelegate.swift */,
+				625E1201233C10690076B139 /* SceneDelegate.swift */,
+				625E1208233C106A0076B139 /* Assets.xcassets */,
+				625E120A233C106A0076B139 /* LaunchScreen.storyboard */,
+				625E120D233C106A0076B139 /* Info.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		34CE89422354D4F2003C66BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34CE89432354D4F2003C66BD /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34CE89472354DDA9003C66BD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				34CE89452354D708003C66BD /* hype.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		34CE89482354DDB1003C66BD /* model controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "model controller";
+			sourceTree = "<group>";
+		};
 		625E11F3233C10690076B139 = {
 			isa = PBXGroup;
 			children = (
 				625E11FE233C10690076B139 /* Hype */,
 				625E11FD233C10690076B139 /* Products */,
+				34CE89422354D4F2003C66BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +96,11 @@
 		625E11FE233C10690076B139 /* Hype */ = {
 			isa = PBXGroup;
 			children = (
-				625E11FF233C10690076B139 /* AppDelegate.swift */,
-				625E1201233C10690076B139 /* SceneDelegate.swift */,
-				625E1203233C10690076B139 /* ViewController.swift */,
+				34CE89482354DDB1003C66BD /* model controller */,
+				34CE89412354D424003C66BD /* Hype.entitlements */,
+				34CE89402354D3D4003C66BD /* resources */,
 				625E1205233C10690076B139 /* Main.storyboard */,
-				625E1208233C106A0076B139 /* Assets.xcassets */,
-				625E120A233C106A0076B139 /* LaunchScreen.storyboard */,
-				625E120D233C106A0076B139 /* Info.plist */,
+				34CE89472354DDA9003C66BD /* models */,
 			);
 			path = Hype;
 			sourceTree = "<group>";
@@ -138,8 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				625E1204233C10690076B139 /* ViewController.swift in Sources */,
 				625E1200233C10690076B139 /* AppDelegate.swift in Sources */,
+				34CE89462354D708003C66BD /* hype.swift in Sources */,
 				625E1202233C10690076B139 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,14 +322,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H8C27D6HU3;
-				INFOPLIST_FILE = Hype/Info.plist;
+				DEVELOPMENT_TEAM = RRGZ3XLFVN;
+				INFOPLIST_FILE = Hype/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = A.Hype;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hype.MO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,14 +341,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hype/Hype.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H8C27D6HU3;
-				INFOPLIST_FILE = Hype/Info.plist;
+				DEVELOPMENT_TEAM = RRGZ3XLFVN;
+				INFOPLIST_FILE = Hype/resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = A.Hype;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hype.MO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
